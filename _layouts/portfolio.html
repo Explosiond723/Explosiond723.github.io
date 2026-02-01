@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="Photography portfolio of Roberto Tamburini">
+    <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+  </head>
+  <body class="p-body">
+    <header class="p-hero">
+      <div class="p-hero__inner">
+        <a class="p-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="p-nav" aria-label="Portfolio navigation">
+          <a href="{{ '/about.html' | relative_url }}">About</a>
+          <a href="{{ '/cv.html' | relative_url }}">CV</a>
+          <a class="is-active" href="{{ '/portfolio.html' | relative_url }}">Portfolio</a>
+          <a href="{{ '/exhibitions.html' | relative_url }}">Exhibitions</a>
+          <a href="{{ '/blog.html' | relative_url }}">Blog</a>
+          <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+        </nav>
+      </div>
+      <div class="p-hero__copy">
+        <h1 class="p-title">{{ page.title }}</h1>
+        {% if page.subtitle %}<p class="p-subtitle">{{ page.subtitle }}</p>{% endif %}
+      </div>
+    </header>
+
+    <main class="p-main">
+      {{ content }}
+    </main>
+
+    <footer class="p-footer">
+      <div class="p-footer__inner">
+        <span>© {{ site.time | date: '%Y' }} Roberto Tamburini</span>
+        <span><a href="{{ '/contact.html' | relative_url }}">Contact</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

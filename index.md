@@ -1,32 +1,18 @@
+---
+title: Home
+---
+
 # Roberto Tamburini
 
-Infra & DevOps Engineer  
-Fotografia, infrastrutture, narrazione tecnica.
-[Chi sono](about.html)
-[Portfolio](portfolio.html)
-[Blog](blog.html)
-[CV](cv.html)
+DevOps Engineer & Photographer. I build reliable systems and chase imperfect light.
 
----
+**Focus:** Linux · Kubernetes/OpenShift · Automation · CI/CD · Platform operations
 
-## Chi sono
-Lavoro come Infra Managed Service Analyst con focus su Kubernetes,
-Linux e automazione.
+Use this site as an entry point to my work — technical and artistic.
 
-Parallelamente esploro la fotografia come forma narrativa.
-
----
-
-## Portfolio fotografico
-In arrivo.
-
----
-
-## Blog tecnico
-Appunti e soluzioni a problemi reali incontrati sul lavoro.
-
----
-
-## Contatti
-GitHub: https://github.com/Explosiond723
-LinkedIn: (link)
+- [About](about.html)
+- [CV](cv.html)
+- [Photography Portfolio](portfolio.html)
+- [Exhibitions & Public Work](exhibitions.html)
+- [Technical Blog](blog.html)
+- [Contact](contact.html)
