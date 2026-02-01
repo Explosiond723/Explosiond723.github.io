@@ -1,3 +1,23 @@
-theme: jekyll-theme-minimal
 title: Roberto Tamburini
-description: Infra, DevOps & fotografia
+description: DevOps Engineer & Photographer
+theme: jekyll-theme-minimal
+locale: en
+show_downloads: false
+
+# Enable posts
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "portfolio.md"
+    values:
+      layout: portfolio
+
+plugins:
+  - jekyll-feed

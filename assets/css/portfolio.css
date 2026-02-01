@@ -1,0 +1,199 @@
+/* Portfolio layout: modern, clean, photo-first.
+   This file is intentionally independent from the Minimal theme CSS. */
+
+:root{
+  --bg:#0b0c0f;
+  --bg2:#11131a;
+  --text:#e9edf1;
+  --muted:#a9b3be;
+  --line: rgba(255,255,255,0.12);
+  --card: rgba(255,255,255,0.06);
+  --accent: #d2f3ff;
+}
+
+.p-body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 800px at 20% 10%, #1b2231 0%, var(--bg) 60%), var(--bg);
+  color: var(--text);
+}
+
+.p-hero{
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.00) 100%);
+}
+
+.p-hero__inner{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px 18px 0 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.p-brand{
+  color: var(--text);
+  text-decoration:none;
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+
+.p-nav{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.p-nav a{
+  color: var(--muted);
+  text-decoration:none;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.p-nav a:hover{
+  color: var(--text);
+  border-color: var(--line);
+  background: rgba(255,255,255,0.04);
+}
+
+.p-nav a.is-active{
+  color: var(--text);
+  border-color: rgba(210,243,255,0.35);
+  background: rgba(210,243,255,0.08);
+}
+
+.p-hero__copy{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 10px 18px 22px 18px;
+}
+
+.p-title{
+  margin: 10px 0 6px 0;
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.6px;
+}
+
+.p-subtitle{
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+.p-main{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 22px 18px 60px 18px;
+}
+
+.p-section{
+  margin: 26px 0 40px 0;
+}
+
+.p-section__head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.p-section__title{
+  margin:0;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+
+.p-section__note{
+  margin:0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.p-gate{
+  margin: 14px 0 16px 0;
+  padding: 12px 14px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.p-grid{
+  margin-top: 16px;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.p-card{
+  grid-column: span 4;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow:hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  min-height: 220px;
+}
+
+.p-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display:block;
+  filter: contrast(1.02) saturate(1.02);
+}
+
+.p-card__meta{
+  padding: 10px 12px 12px 12px;
+}
+
+.p-card__title{
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  font-weight: 620;
+}
+
+.p-card__caption{
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.p-footer{
+  border-top: 1px solid var(--line);
+  background: rgba(0,0,0,0.25);
+}
+
+.p-footer__inner{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 18px 18px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.p-footer a{ color: var(--accent); text-decoration:none; }
+.p-footer a:hover{ text-decoration:underline; }
+
+@media (max-width: 920px){
+  .p-card{ grid-column: span 6; }
+}
+@media (max-width: 560px){
+  .p-card{ grid-column: span 12; }
+  .p-nav{ gap: 8px; }
+}
