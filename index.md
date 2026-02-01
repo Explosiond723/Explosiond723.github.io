@@ -2,6 +2,10 @@
 
 Infra & DevOps Engineer  
 Fotografia, infrastrutture, narrazione tecnica.
+[Chi sono](about.html)
+[Portfolio](portfolio.html)
+[Blog](blog.html)
+[CV](cv.html)
 
 ---
 
