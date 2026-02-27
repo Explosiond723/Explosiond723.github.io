@@ -1,29 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
-    {% feed_meta %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-        <p>{{ site.description }}</p>
-      </header>
+<head>
+  {% include head.html %}
+</head>
+<body>
 
-      <section>
-        {% include nav.html %}
-        {{ content }}
-      </section>
-
-      <footer>
-        <p>© {{ site.time | date: '%Y' }} Roberto Tamburini · <a href="{{ '/contact.html' | relative_url }}">Contact</a></p>
-      </footer>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-brand" href="{{ '/' | relative_url }}">Roberto Tamburini</a>
+      {% include nav.html %}
     </div>
-  </body>
+  </header>
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© {{ site.time | date: '%Y' }} Roberto Tamburini</small>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.gate-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var target = document.getElementById(btn.dataset.target);
+        var isOpen = target.classList.toggle('is-open');
+        btn.textContent = isOpen ? 'Hide content' : 'I understand, show content';
+      });
+    });
+  </script>
+
+</body>
 </html>

@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{% seo %}
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Roberto Tamburini",
+  "jobTitle": "Platform Engineer",
+  "url": "{{ site.url }}",
+  "email": "{{ site.author.email }}",
+  "sameAs": [
+    "https://www.linkedin.com/in/rtamburini",
+    "https://github.com/Explosiond723"
+  ],
+  "knowsAbout": [
+    "Kubernetes", "Linux", "OpenShift", "DevOps",
+    "Platform Engineering", "Ansible", "Prometheus", "Photography"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IT"
+  }
+}
+</script>
+{% endif %}

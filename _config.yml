@@ -1,23 +1,39 @@
 title: Roberto Tamburini
-description: DevOps Engineer & Photographer
-theme: jekyll-theme-minimal
-locale: en
-show_downloads: false
+tagline: Platform Engineer · Photographer
+description: >-
+  Platform Engineer with 7 years of experience in Linux, Kubernetes, and OpenShift
+  infrastructure. EU citizen based in Italy, open to relocation and remote work.
 
-# Enable posts
-collections:
-  posts:
-    output: true
+url: "https://explosiond723.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Roberto Tamburini
+  email: robertotamburini96@hotmail.it
+
+social:
+  name: Roberto Tamburini
+  links:
+    - https://www.linkedin.com/in/rtamburini
+    - https://github.com/Explosiond723
+
+twitter:
+  card: summary
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - README_SITE.md
+  - CLAUDE.md
 
 defaults:
   - scope:
       path: ""
     values:
       layout: default
-  - scope:
-      path: "portfolio.md"
-    values:
-      layout: portfolio
-
-plugins:
-  - jekyll-feed
